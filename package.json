@@ -1,0 +1,32 @@
+{
+  "name": "poketzbot",
+  "version": "0.0.2",
+  "description": "CS GO - Rank Checking and Group member management bot",
+  "main": "rankChecker.js",
+  "dependencies": {
+    "globaloffensive": "^1.2.0",
+    "nedb": "^1.8.0",
+    "steam-group": "^0.1.0",
+    "steam-user": "^3.19.1",
+    "steamcommunity": "^3.30.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liamcloss/poketzbot.git"
+  },
+  "keywords": [
+    "CS",
+    "GO",
+    "BOT"
+  ],
+  "author": "Liam Closs <liamcloss@gmail.com> (poketz)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liamcloss/poketzbot/issues"
+  },
+  "homepage": "https://github.com/liamcloss/poketzbot#readme"
+}
