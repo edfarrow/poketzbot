@@ -11,7 +11,7 @@ logOnOptions = {
 	password: ''
 }
 daysToUpdateRanks = 7
-botName = "[SF-BOT] Poketz" // The bots name.
+botName = "[SF-BOT] Rincewind" // The bots name.
 databaseName = "ranks"  // The name of the flat-file, If you've been running this for a while you'll already have one.. if you want to start over - rename this.
 
 // Don't touch anything under here -- 
@@ -30,7 +30,16 @@ group = steamGroup.fromId64(groupsToInvite['maingroup'])
 SteamCommunity = require('steamcommunity')
 community = new SteamCommunity();
 
-
+user.on('error', function(e) {
+	if(SteamUser.EResult.LogonSessionReplaced = 1){
+		console.log("We've been logged in somewhere else.")
+		// We've logged in elsewhere - either one of the other .js has started a new session or we logged in with  a steam client
+		process.exit() // fail gracefully for our log files
+	}else{
+		throw e
+		// If its not an error we're expecting we'll bomb out
+	}
+});
 	
 mmRanks = [  
 	"UNRANKED",
