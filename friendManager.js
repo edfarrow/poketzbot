@@ -51,9 +51,7 @@ user.on('friendsList', () => {
 			
 			console.log("Lets start sending invites")
 			for(var j = 0; j < MembersNotFriends.length; j++) {
-				console.log("No: " + j + " SteamID " + MembersNotFriends[j])
-				MembersNotFriends[j]
-				
+			
 				user.addFriend(MembersNotFriends[j], function(error, friend) { 
 			
 					if(!error) {
